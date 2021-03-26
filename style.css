@@ -1,0 +1,273 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*top navigation bar*/
+
+.nav-bar{
+    margin: 0;
+    background-color: rgb(31, 30, 30);
+    color: whitesmoke;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    justify-content: start;
+}
+
+.nav-bar > .nav-title {
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 1;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav-title > h1{
+    margin: 0 0 0 150px;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.nav-title > h2{
+    margin: 0 0 0 50px;
+    justify-content: space-between;
+}
+
+.nav-bar > .nav-link {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.btn{
+    font-size: 2rem;
+  margin-right: 200px;
+  border: 2px solid black;
+  background-color: teal;
+  box-shadow: 5px 5px black;
+}
+
+li, button{
+    margin: 0 10px;
+}
+
+/* ID Card */
+
+.column1{
+    flex: 2;
+    margin: 0 60px;
+    justify-content: left;
+}
+
+.id-card{
+    position: relative;
+    top: 50px;
+    left: 100px;
+    border: solid 3px rgb(74, 76, 78);
+    border-radius: 10px;
+
+}
+
+.id-margin{
+    margin-left: 25px;
+}
+
+.id-margin > h1{
+    font-size: 2rem;
+    margin-left: 0px;
+    margin-top: 60px;
+}
+
+.id-header{
+    background-color: darkcyan;
+    height: 125px;
+}
+
+.id-location{
+    display: flex;
+}
+
+h2{
+    display: flex;
+    position: relative;
+}
+
+p{
+    text-decoration: darkcyan;
+    text-decoration: underline;
+}
+
+.id-location > img{
+    position: relative;
+    height: 50px;
+    width: 30px;
+}
+
+.id-header > img{
+    border: 2px solid rgb(32, 30, 30);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 125px;
+    width: 125px;
+}
+
+.id-settings{
+    font-size: 1.5rem;
+    display: flex;
+    position: relative;
+}
+
+.id-settings > img{
+    margin-right: 10px;
+    margin-top: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.id-location > h2{
+    position: relative;
+}
+
+/* Education Card */
+
+.education-card{
+    padding: 0;
+    margin: 20px 0 0 0;
+    border: solid 3px rgb(74, 76, 78);
+    position: relative;
+    top: 50px;
+    left: 100px;
+    border-radius: 10px;
+
+}
+
+.ed-header{
+    position: relative;
+    background-color: rgb(32, 30, 30);
+    color: whitesmoke;
+
+}
+
+.ed-header > h1{
+    align-items: center;
+    height: 50px;
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.ed-margin > h1, h2, h3{
+    margin-left: 10px;
+}
+
+
+/*  Connection Requests */
+
+.user > img{
+    height: 50px;
+}
+
+.user > h2 {
+    width: 150px;
+}
+
+.column2{
+    position: relative;
+    padding: 0 20px;
+    margin: 30px 100px 0 60px;
+    justify-content: right;
+    flex: 1;
+}
+
+.connections{
+    margin: 20px 0 0 0;
+    border: solid 3px rgb(74, 76, 78);
+    border-radius: 10px;
+}
+
+.con-header{
+    background-color:rgb(32, 30, 30);
+    color: whitesmoke;
+    display: flex;
+    align-content: center;
+}
+
+.number{
+    border: 1px solid darkgray;
+    background-color: darkgray;
+    border-radius: 50%;
+    padding: 7px;
+    color: black;
+}
+
+.con-header > h2{
+    margin-left: 10px;
+}
+
+.accept-deny {
+    margin: 0 0 0 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.accept-deny > img{
+    margin: 0 0 0 10px;
+    height: 35px;
+    
+}
+
+
+/*Current Connections*/
+
+.your-connections{
+    margin: 20px 0 0 0;
+    border: solid 3px rgb(74, 76, 78);
+    border-radius: 10px;
+}
+
+
+#body-columns{
+    display: flex;
+}
+
+.your-con-header{
+    background-color:rgb(32, 30, 30);
+    color: whitesmoke;
+    display: flex;
+    align-content: center;
+}
+
+.your-con-header > h2{
+    margin-left: 10px;
+}
+
+.user {
+    margin: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.view-more{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid rgb(74, 76, 78);
+    border-left: none;
+    border-right: none;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
