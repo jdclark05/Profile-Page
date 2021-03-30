@@ -5,8 +5,6 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,7 +24,7 @@
             <div class="id-card">
                 <div class="id-header"><img src="images/IMG_1290.jpg"></div>
                 <div class="id-margin">
-                    <h1>James Clark</h1>
+                    <h1 class="capitalize">James Clark</h1>
                     <div class="id-location">
                         <img src="images/map-marker.png">
                         <h2>Detroit</h2>
@@ -35,7 +33,7 @@
                     <h2>Master of shadows and the Internet!</h2>
                     <div class="id-settings">
                         <img src="images/gear.png">
-                        <p>edit profile</p>
+                        <p id="editName" onclick ="edit()">edit profile</p>
                     </div>
                 </div>
             </div>
@@ -51,29 +49,33 @@
         </div>
         <div class="column2">
                 <div class="connections">
-                    <div class="con-header"><h2 class="number">2</h2><h2>Connection Request</h2>
+                    <div class="con-header">
+                        <h2 class="number" id="countSub">2</h2>
+                        <h3>Connection Request</h3>
                     </div>
                     <div class="con-left">
-                        <div class="user">
+                        <div class="user" id="user1">
                             <img src="images/todd-s.jpg" alt="">
                             <h2>Todd E</h2>
                             <div class="accept-deny">
-                                <img src="images/accept-circle.png">
-                                <img src="images/close-circle.png">
+                                <img src="images/accept-circle.png" onclick="add(1)">
+                                <img src="images/close-circle.png" onclick="deny(1)">
                             </div>
                         </div>
-                        <div class="user">
+                        <div class="user" id="user2">
                             <img src="images/phil-s.jpg" alt="phil">
                             <h2>Phil K</h2>
                             <div class="accept-deny">
-                                <img src="images/accept-circle.png">
-                                <img src="images/close-circle.png">
+                                <img src="images/accept-circle.png" onclick="add(2)">
+                                <img src="images/close-circle.png" onclick="deny(2)">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="your-connections">
-                    <div class="your-con-header"><h2 class="number">500+</h2><h2>Your Connections</h2>
+                    <div class="your-con-header">
+                        <h2 class="number" id="countTotal">482</h2>
+                        <h3>Your Connections</h2>
                     </div>
                     <div class="con-left">
                         <div class="user">
@@ -98,6 +100,8 @@
                     </div>
                 </div>
         </div>
-        </div>
+
+
+        <script src="script.js"></script>
 </body>
 </html>
